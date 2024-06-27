@@ -1,0 +1,69 @@
+.scene {
+  width: 300px;
+  height: 400px;
+  perspective: 600px;
+  margin: 20px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+  background: linear-gradient(to right, #ffc107, #f99b15); /* Example gradient */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cube.flipped {
+  transform: rotateY(180deg);
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cube-face:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cube-front {
+  /* Remove background styles, using cube background instead */
+}
+
+.cube-back {
+  background: #fff; /* Lighter background for text readability */
+  transform: rotateY(180deg);
+}
+
+.fancy-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 15px;
+}
+
+.fancy-image:hover {
+  /* Change hover effect here, for example: */
+  opacity: 0.8;
+}
+
+.fancy-title {
+  font-size: 1.8rem; /* Adjust font size as desired */
+  color: #333;
+  text-align: center;
+  margin: 10px 0;
+  font-family: 'Lato', sans-serif; /* Example modern font */
+}
