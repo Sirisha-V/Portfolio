@@ -1,14 +1,24 @@
 import React from 'react';
 import PortfolioBlock from './PortfolioBlock';
+import Carousel from './Carousel';
 
 function App() {
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#fafafa' }}>
+      <Carousel />
+    </div>
+  );
+}
+
+
+function App() {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#fafafa' }}>
       <PortfolioBlock
-        image="path_to_your_image.jpg"
+        image="https://via.placeholder.com/300x200.png?text=Project+Image"
         title="Project Title"
-        description="Description of the project."
-        technologies="Tech1, Tech2, Tech3"
+        description="This is a brief description of the project. It covers the main objectives and the outcomes."
+        technologies="React, CSS, JavaScript"
       />
     </div>
   );
