@@ -33,12 +33,12 @@ export const info = {
         },
         {
             emoji: "📧",
-            text: "Sirisha.v2000@gmail.com"
+            text:  "Sirisha.v2000@gmail.com"
         }
     ],
     socials: [
         {
-            link: "https://linkedin.com/sirishavedamurthy",
+            link: "https://www.linkedin.com/in/sirisha-vedamurthy/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },

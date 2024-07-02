@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioBlock from './PortfolioBlock';
+import Achievements from './Achievements';
 import Carousel from './Carousel';
 
 function App() {
